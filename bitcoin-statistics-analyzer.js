@@ -171,8 +171,8 @@ ${'─'.repeat(30)}
 • Desvio Padrão Amostral: $${stats.estatisticas.desvioPadraoAmostral.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}
 
 📊 COEFICIENTE DE VARIAÇÃO:
-• CV Populacional: ${stats.estatisticas.coeficienteVariacaoPopulacional.toFixed(2)}%
-• CV Amostral: ${stats.estatisticas.coeficienteVariacaoAmostral.toFixed(2)}%
+• CV Populacional: ${stats.estatisticas.coeficienteVariacaoPopulacional.toFixed(6)}%
+• CV Amostral: ${stats.estatisticas.coeficienteVariacaoAmostral.toFixed(6)}%
 
 ${'='.repeat(50)}
 ⚡ INFORMAÇÕES TÉCNICAS:
