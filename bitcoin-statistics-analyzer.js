@@ -31,9 +31,29 @@ class BitcoinStatsAnalyzer {
       );
 
       // Extrair apenas os preços (dados horários)
-      this.data = response.data.prices.map(price => price[1]);
+      let rawData = response.data.prices.map(price => price[1]);
       
-      console.log(`✅ Total de dados coletados: ${this.data.length}`);
+      // Garantir exatamente o número esperado de dados (days * 24 horas)
+      const expectedDataPoints = days * 24;
+      
+      console.log(`📊 Dados brutos coletados: ${rawData.length}`);
+      console.log(`📊 Dados esperados: ${expectedDataPoints}`);
+      
+      if (rawData.length > expectedDataPoints) {
+        // Se tiver dados extras, pegar os mais recentes (últimos N dados)
+        this.data = rawData.slice(-expectedDataPoints);
+        console.log(`✂️  Ajustado para exatos ${expectedDataPoints} dados (removidos ${rawData.length - expectedDataPoints} dados extras)`);
+      } else if (rawData.length < expectedDataPoints) {
+        // Se tiver menos dados, usar todos disponíveis
+        this.data = rawData;
+        console.log(`⚠️  Dados insuficientes: ${rawData.length} de ${expectedDataPoints} esperados`);
+      } else {
+        // Se tiver exatamente a quantidade esperada
+        this.data = rawData;
+        console.log(`✅ Dados perfeitos: exatos ${expectedDataPoints} dados coletados`);
+      }
+      
+      console.log(`✅ Total final de dados: ${this.data.length}`);
       console.log(`✅ Frequência: Dados horários`);
       console.log(`✅ Período: ${days} dias`);
       console.log(`✅ Meta de 100+ dados: ${this.data.length >= 100 ? '✅ ATINGIDA' : '❌ NÃO ATINGIDA'}`);

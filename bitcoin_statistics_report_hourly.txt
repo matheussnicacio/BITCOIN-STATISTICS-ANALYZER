@@ -3,7 +3,7 @@
 ==================================================
 
 📊 DADOS BÁSICOS:
-• Total de dados coletados: 2.162
+• Total de dados coletados: 2.160
 • Intervalo de coleta: 1 hora
 • Período de cobertura: 90 dias
 • Valor mínimo: $105,430.07
@@ -13,24 +13,24 @@
 ──────────────────────────────
 
 🔢 MEDIDAS DE TENDÊNCIA CENTRAL:
-• Média Aritmética: $114,328.88
-• Mediana: $115,032.18
+• Média Aritmética: $114,335.02
+• Mediana: $115,039.05
 • Moda: $117,875.84
 
 📏 MEDIDAS DE DISPERSÃO:
 • Amplitude: $18,352.01
 
 📊 VARIÂNCIA:
-• Variância Populacional: 15,150,922.66
-• Variância Amostral: 15,157,933.73
+• Variância Populacional: 15,122,375.13
+• Variância Amostral: 15,129,379.48
 
 📈 DESVIO PADRÃO:
-• Desvio Padrão Populacional: $3,892.42
-• Desvio Padrão Amostral: $3,893.32
+• Desvio Padrão Populacional: $3,888.75
+• Desvio Padrão Amostral: $3,889.65
 
 📊 COEFICIENTE DE VARIAÇÃO:
-• CV Populacional: 3.404580%
-• CV Amostral: 3.405368%
+• CV Populacional: 3.401189%
+• CV Amostral: 3.401976%
 
 ==================================================
 ⚡ INFORMAÇÕES TÉCNICAS:
@@ -40,4 +40,4 @@
 • Status da meta (≥100): ✅ ATINGIDA
 
 ==================================================
-Relatório gerado em: 25/09/2025, 12:05:29
+Relatório gerado em: 25/09/2025, 12:28:00
