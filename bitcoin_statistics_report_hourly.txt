@@ -1,0 +1,43 @@
+
+📈 ANÁLISE ESTATÍSTICA - BITCOIN (USD)
+==================================================
+
+📊 DADOS BÁSICOS:
+• Total de dados coletados: 2.162
+• Intervalo de coleta: 1 hora
+• Período de cobertura: 90 dias
+• Valor mínimo: $105,430.07
+• Valor máximo: $123,782.08
+
+📋 ESTATÍSTICAS CALCULADAS:
+──────────────────────────────
+
+🔢 MEDIDAS DE TENDÊNCIA CENTRAL:
+• Média Aritmética: $114,326.53
+• Mediana: $115,032.18
+• Moda: $117,875.84
+
+📏 MEDIDAS DE DISPERSÃO:
+• Amplitude: $18,352.01
+
+📊 VARIÂNCIA:
+• Variância Populacional: 15,175,489.60
+• Variância Amostral: 15,182,512.04
+
+📈 DESVIO PADRÃO:
+• Desvio Padrão Populacional: $3,895.57
+• Desvio Padrão Amostral: $3,896.47
+
+📊 COEFICIENTE DE VARIAÇÃO:
+• CV Populacional: 3.41%
+• CV Amostral: 3.41%
+
+==================================================
+⚡ INFORMAÇÕES TÉCNICAS:
+• Frequência de coleta: Dados horários
+• Fonte de dados: CoinGecko API (Gratuita)
+• Método de amostragem: Todos os dados horários
+• Status da meta (≥100): ✅ ATINGIDA
+
+==================================================
+Relatório gerado em: 25/09/2025, 11:43:04

@@ -1,0 +1,34 @@
+
+📈 ANÁLISE ESTATÍSTICA - BITCOIN (USD)
+==================================================
+
+📊 DADOS BÁSICOS:
+• Total de dados coletados: 366
+• Valor mínimo: $60,195.18
+• Valor máximo: $123,560.99
+
+📋 ESTATÍSTICAS CALCULADAS:
+──────────────────────────────
+
+🔢 MEDIDAS DE TENDÊNCIA CENTRAL:
+• Média Aritmética: $96,786.59
+• Mediana: $97,933.64
+• Moda: Sem moda (todos os valores são únicos)
+
+📏 MEDIDAS DE DISPERSÃO:
+• Amplitude: $63,365.81
+
+📊 VARIÂNCIA:
+• Variância Populacional: 238,068,211.08
+• Variância Amostral: 238,720,452.75
+
+📈 DESVIO PADRÃO:
+• Desvio Padrão Populacional: $15,429.46
+• Desvio Padrão Amostral: $15,450.58
+
+📊 COEFICIENTE DE VARIAÇÃO:
+• CV Populacional: 15.94%
+• CV Amostral: 15.96%
+
+==================================================
+Relatório gerado em: 25/09/2025, 11:13:53
