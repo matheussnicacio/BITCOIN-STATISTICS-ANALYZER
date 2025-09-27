@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitcoin Price Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>₿ Bitcoin Price Tracker</h1>
+        <p class="subtitle">Historical Bitcoin prices since its creation</p>
+      </header>
+
+      <div class="current-price">
+        <div class="price-card">
+          <h2>Current Bitcoin Price</h2>
+          <div id="current-price">Loading...</div>
+          <div id="price-change">...</div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <label for="days-select">Select time period:</label>
+        <select id="days-select">
+          <option value="30">Last 30 days</option>
+          <option value="90">Last 3 months</option>
+          <option value="365" selected>Last year</option>
+          <option value="1095">Last 3 years</option>
+          <option value="2555">Last 7 years</option>
+          <option value="max">All available data (~10 years)</option>
+        </select>
+        <button id="fetch-data">Update Chart</button>
+      </div>
+
+      <div class="chart-container">
+        <canvas id="price-chart"></canvas>
+      </div>
+
+      <div class="stats">
+        <div class="stat-card">
+          <h3>Highest Price</h3>
+          <div id="highest-price">-</div>
+          <div id="highest-date">-</div>
+        </div>
+        <div class="stat-card">
+          <h3>Lowest Price</h3>
+          <div id="lowest-price">-</div>
+          <div id="lowest-date">-</div>
+        </div>
+        <div class="stat-card">
+          <h3>Total Days</h3>
+          <div id="total-days">-</div>
+        </div>
+      </div>
+
+      <div class="data-table-container">
+        <h2>Histórico de valores</h2>
+        <div class="table-wrapper">
+          <table id="data-table">
+            <thead>
+              <tr>
+                <th>Data</th>
+                <th>Preço (USD)</th>
+                <th>Variação</th>
+              </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="statistics-table-container">
+        <h2>Análise Estatística</h2>
+        <div class="controls">
+          <label for="stats-days-select">Período de Análise:</label>
+          <select id="stats-days-select">
+            <option value="30">Últimos 30 dias</option>
+            <option value="90" selected>Últimos 90 dias</option>
+          </select>
+          <button id="fetch-statistics">Calcular Estatísticas</button>
+        </div>
+        <div class="table-wrapper">
+          <table id="statistics-table">
+            <thead>
+              <tr>
+                <th>Medida Estatística</th>
+                <th>Valor</th>
+                <th>Descrição</th>
+              </tr>
+            </thead>
+            <tbody id="statistics-body">
+              <tr>
+                <td colspan="3" class="no-data">Click "Calculate Statistics" to load data</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>Loading Bitcoin data...</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

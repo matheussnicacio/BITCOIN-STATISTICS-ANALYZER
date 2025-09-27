@@ -1,0 +1,30 @@
+{
+  "name": "bitcoin-statistics-analyzer",
+  "version": "1.0.0",
+  "description": "Análise estatística completa dos preços do Bitcoin usando API pública",
+  "main": "bitcoin-statistics-analyzer.js",
+  "scripts": {
+    "start": "node bitcoin-statistics-analyzer.js",
+    "dev": "nodemon bitcoin-statistics-analyzer.js",
+    "test": "node test-analyzer.js"
+  },
+  "keywords": [
+    "bitcoin",
+    "cryptocurrency",
+    "statistics",
+    "data-analysis",
+    "coingecko-api",
+    "nodejs"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
