@@ -13,7 +13,7 @@
 ──────────────────────────────
 
 🔢 MEDIDAS DE TENDÊNCIA CENTRAL:
-• Média Aritmética: $114,335.02
+• Média Aritmética: $114,380.64
 • Mediana: $115,039.05
 • Moda: $117,875.84
 
@@ -21,16 +21,16 @@
 • Amplitude: $18,352.01
 
 📊 VARIÂNCIA:
-• Variância Populacional: 15,122,375.13
-• Variância Amostral: 15,129,379.48
+• Variância Populacional: 14,583,535.35
+• Variância Amostral: 14,590,290.12
 
 📈 DESVIO PADRÃO:
-• Desvio Padrão Populacional: $3,888.75
-• Desvio Padrão Amostral: $3,889.65
+• Desvio Padrão Populacional: $3,818.84
+• Desvio Padrão Amostral: $3,819.72
 
 📊 COEFICIENTE DE VARIAÇÃO:
-• CV Populacional: 3.401189%
-• CV Amostral: 3.401976%
+• CV Populacional: 3.338711%
+• CV Amostral: 3.339484%
 
 ==================================================
 ⚡ INFORMAÇÕES TÉCNICAS:
@@ -40,4 +40,4 @@
 • Status da meta (≥100): ✅ ATINGIDA
 
 ==================================================
-Relatório gerado em: 25/09/2025, 12:28:00
+Relatório gerado em: 27/09/2025, 11:44:15
