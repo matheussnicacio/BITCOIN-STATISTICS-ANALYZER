@@ -118,16 +118,19 @@ function updateChart() {
   priceChart = new Chart(ctx, {
     type: "line",
     data: {
-      labels: labels,
+      labels: labels.map((date) => {
+        return new Date(date).toLocaleDateString("pt-BR");
+      }),
       datasets: [
         {
-          label: "Bitcoin Price (USD)",
+          label: "Valor do Bitcoin (USD)",
           data: prices,
           borderColor: "#000000",
-          backgroundColor: "rgba(247, 147, 26, 0.1)",
-          borderWidth: 2,
+          backgroundColor: "rgba(0, 102, 255, 0.5)",
+          borderWidth: 1,
           fill: true,
           tension: 0.1,
+          pointRadius: 0,
         },
       ],
     },
@@ -139,7 +142,7 @@ function updateChart() {
           display: true,
           title: {
             display: true,
-            text: "Date",
+            text: "Data",
           },
           ticks: {
             maxTicksLimit: 10,
@@ -149,7 +152,7 @@ function updateChart() {
           display: true,
           title: {
             display: true,
-            text: "Price (USD)",
+            text: "Valor (USD)",
           },
           ticks: {
             callback: function (value) {
@@ -206,10 +209,10 @@ function formatPrice(price) {
 
 function formatDate(dateString) {
   const date = new Date(dateString);
-  return date.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "short",
+  return date.toLocaleDateString("pt-BR", {
     day: "numeric",
+    month: "short",
+    year: "numeric",
   });
 }
 
